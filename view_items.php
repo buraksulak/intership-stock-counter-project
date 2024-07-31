@@ -6,7 +6,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<h2>Stock Items</h2>";
-    echo "<table border='1'><tr><th>ID</th><th>Name</th><th>Amount</th><th>Description</th><th>Edit</th></tr>";
+    echo "<table border='1'><tr><th>ID</th><th>İsim</th><th>Miktar</th><th>Açıklama</th><th>Düzenle</th></tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>{$row['id']}</td>
